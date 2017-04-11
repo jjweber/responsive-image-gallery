@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/jjweber/responsive-image-gallery#readme",
   "devDependencies": {
+    "autoprefixer": "^6.7.7",
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
+    "gulp-postcss": "^6.4.0",
     "gulp-sass": "^3.1.0"
   }
 }
