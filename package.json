@@ -1,0 +1,24 @@
+{
+  "name": "responsive-image-gallery",
+  "version": "1.0.0",
+  "description": "Project for wk3 of DWS2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjweber/responsive-image-gallery.git"
+  },
+  "author": "Justin Weber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjweber/responsive-image-gallery/issues"
+  },
+  "homepage": "https://github.com/jjweber/responsive-image-gallery#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
