@@ -1,5 +1,7 @@
-$primary-color: blue;
+// Utilities
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/placeholders';
 
-#mainContent p {
-  color: $primary-color;
-}
+// Base Style
+@import 'base/base';
