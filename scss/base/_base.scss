@@ -11,7 +11,49 @@ html body {
 
 header {
   text-align: center;
+  margin-bottom: 20px;
+
+  img {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+  }
 }
+
+img.on {
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+}
+
+
+
+/*.globe {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin:-60px 0 0 -60px;
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+}*/
+
+
 
 #mainContent {
   text-align: center;
@@ -25,6 +67,7 @@ header {
 #mainContent h1 {
   color: blue;
   font-size: 35px;
+  margin: 0;
 }
 
 #mainContent p {
@@ -32,7 +75,7 @@ header {
   margin-bottom: 50px;
 }
 
-.gallery {
+#gallery {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

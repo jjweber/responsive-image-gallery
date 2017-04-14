@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- If using this local comment out this meta. This is to handle Mixed content error on github page. -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
     <title>Responsive Image Gallery</title>
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header onclick="toggleAnimation()">
       <!-- Icon -->
-      <img src="./assets/globe.svg" alt="Globe Icon">
+      <img id="headerIcon" src="./assets/globe.svg" alt="Globe Icon">
     </header>
     <section id="mainContent">
       <div class="wrapper">
@@ -20,16 +20,16 @@
         <p>"I haven't been everywhere, but it's on my list." - Susan Sontag</p>
 
         <!-- Gallery -->
-        <div class="gallery">
-          <img src="./assets/bridge-in-germany.jpg" alt="Photo of a bridge in Germany">
-          <img src="./assets/dufflebag.jpg" alt="Photo of a dufflebag on the ground">
-          <img src="./assets/geyser-iceland.jpg" alt="Photo of a geyser in Iceland">
-          <img src="./assets/golden-gate.jpg" alt="Photo of the Golden Gate bridge">
-          <img src="./assets/surfboard-truck.jpg" alt="Photo of a old trunk with a surfboard in the back">
-          <img src="./assets/mountains-clouds.jpg" alt="Photo of a mountain with clouds">
-          <img src="./assets/temple-trail.jpg" alt="Photo of a temple trail">
-          <img src="./assets/compass.jpg" alt="Photo of a hand holding a compass">
-          <img src="./assets/waterfall-rainbow.jpg" alt="Photo of a waterfall with a rainbow">
+        <div id="gallery">
+          <img src="./assets/bridge-in-germany/300px.jpg" alt="Photo of a bridge in Germany">
+          <img src="./assets/dufflebag/300px.jpg" alt="Photo of a dufflebag on the ground">
+          <img src="./assets/geyser-iceland/300px.jpg" alt="Photo of a geyser in Iceland">
+          <img src="./assets/golden-gate/300px.jpg" alt="Photo of the Golden Gate bridge">
+          <img src="./assets/surfboard-truck/300px.jpg" alt="Photo of a old trunk with a surfboard in the back">
+          <img src="./assets/mountains-clouds/300px.jpg" alt="Photo of a mountain with clouds">
+          <img src="./assets/temple-trail/300px.jpg" alt="Photo of a temple trail">
+          <img src="./assets/compass/300px.jpg" alt="Photo of a hand holding a compass">
+          <img src="./assets/waterfall-rainbow/300px.jpg" alt="Photo of a waterfall with a rainbow">
         </div>
       </div>
     </section>
