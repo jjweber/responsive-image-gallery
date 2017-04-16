@@ -1,7 +1,7 @@
 html body {
   font-family: $font-stack;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1;
   color: $primary-color;
   width: 100%;
   height: 100%;
@@ -11,7 +11,6 @@ html body {
 
 header {
   text-align: center;
-  margin-bottom: 20px;
 
   img {
     margin: 20px;
@@ -36,25 +35,6 @@ img.on {
   }
 }
 
-
-
-/*.globe {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    margin:-60px 0 0 -60px;
-    overflow: hidden;
-    transition-duration: 0.8s;
-    transition-property: transform;
-
-
-    &:hover {
-      transform: rotate(360deg);
-    }
-}*/
-
-
-
 #mainContent {
   text-align: center;
 }
@@ -69,15 +49,19 @@ img.on {
   margin: 0;
 }
 
-q {
-  color: green;
+#mobile-instructions {
+  display: block;
+  color: blue;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-list {
   margin-top: 65px;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
 
   li {
@@ -123,6 +107,7 @@ q {
   color: white;
   position: absolute;
   overflow: hidden;
+  display: block;
 }
 
 span {
@@ -156,80 +141,119 @@ span {
   margin-bottom: 25px;
 }
 
-/*
-span.text-content {
-  position: absolute;
-  background: black;
-  background: rgba(0,0,0,0.75);
-  color: white;
-  height: 35%;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.6s ease;
-}
-
-.caption span.text-content {
-  left: 0;
-  bottom: -30%;
-}
-
-.caption:hover span.text-content {
-  opacity: 1;
-  bottom: 6px;
-}
-*/
-/*
-ul.img-list {
-  list-style-type: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 100px 20px;
-  text-align: center;
-}
-
-ul.img-list li {
-  display: inline-block;
-  height: 150px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 150px;
-}
-
-ul.img-list li img {
-  max-width: 300px;
-}
-
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  opacity: 0;
-  transition: opacity 500ms;
-}
-
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-ul.img-list li:hover span.text-content {
-  opacity: 1;
-}
-*/
-
-
 footer {
   text-align: center;
   font-weight: bold;
   margin-top: 100px;
-  border-top: 2px solid $primary-color;
+
+  p:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+
+/* Larger Phones, Small Tablets */
+@media only screen and (min-width : 480px) {
+  span {
+    clear: both;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 4px 2px;
+    padding-left: 5px;
+    height: 30px;
+  }
+
+  .imageIcon {
+    padding: 0 10px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: auto;
+  }
+
+  #locationSpan .imageIcon {
+    padding-bottom: 10px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  #mainContent {
+    line-height: 1.2;
+  }
+  #mainContent h1 {
+    font-size: 45px;
+  }
+
+  #mobile-instructions {
+  display: none;
+  }
+
+  .img-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+
+  span {
+    padding: 4px 2px;
+    padding-left: 5px;
+    height: 35px;
+  }
+
+  .imageIcon {
+    padding: 15px 15px;
+  }
+
+  #nameSpan > p {
+    font-size: 20px;
+  }
+
+  #locationSpan > p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  footer p:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  #mainContent {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  header {
+    margin-bottom: 20px;
+
+    img {
+      margin: 50px 0 20px 0;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  #mainContent h1 {
+    font-size: 60px;
+  }
+
+  .img-list {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 40px;
+  }
+
+  #nameSpan > p {
+    font-size: 25px;
+  }
+
+  #locationSpan > p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  footer p:last-of-type {
+    margin-bottom: 40px;
+  }
+
 }
