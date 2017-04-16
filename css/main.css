@@ -53,7 +53,6 @@ img.on {
   width: 85%; }
 
 #mainContent h1 {
-  color: blue;
   font-size: 35px;
   margin: 0; }
 
@@ -82,6 +81,8 @@ q {
   display: block;
   width: 100%;
   height: auto; }
+  .image:hover {
+    cursor: pointer; }
 
 .overlay {
   position: absolute;
@@ -93,7 +94,8 @@ q {
   transition: .5s ease; }
 
 .container:hover .overlay {
-  height: 42%; }
+  cursor: pointer;
+  height: 40%; }
 
 .overlay-contents {
   white-space: nowrap;
@@ -119,7 +121,7 @@ span {
   height: auto; }
 
 #locationSpan .imageIcon {
-  padding-bottom: 20px; }
+  padding-bottom: 10px; }
 
 #nameSpan > p {
   font-size: 18px;
@@ -127,7 +129,7 @@ span {
 
 #locationSpan > p {
   font-size: 15px;
-  margin-bottom: 35px; }
+  margin-bottom: 25px; }
 
 /*
 span.text-content {
