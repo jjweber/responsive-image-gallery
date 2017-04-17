@@ -1,4 +1,5 @@
-// Toggle event for header icon animaation clicked.
+/*Toggle event for header icon animation clicked.*/
 function toggleAnimation() {
-  document.getElementById("headerIcon").classList.toggle("on");
+    'use strict';
+    document.getElementById("headerIcon").classList.toggle("on");
 }

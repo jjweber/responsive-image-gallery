@@ -41,15 +41,17 @@ img.on {
   font-size: 35px;
   margin: 0; }
 
+#mainContent p:first-of-type {
+  margin-bottom: 30px; }
+
 #mobile-instructions {
   display: block;
   color: blue;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 0 auto 10px auto; }
 
 .img-list {
-  margin-top: 65px;
+  margin-top: 20px;
   padding: 0;
   display: -ms-grid;
   display: grid;
@@ -93,7 +95,7 @@ img.on {
   overflow: hidden;
   display: block; }
 
-span {
+.contentSpan {
   clear: both;
   float: left;
   display: -ms-flexbox;
@@ -113,13 +115,12 @@ span {
 #locationSpan .imageIcon {
   padding-bottom: 10px; }
 
-#nameSpan > p {
+#nameSpan > span {
   font-size: 18px;
   font-weight: bold; }
 
-#locationSpan > p {
-  font-size: 15px;
-  margin-bottom: 25px; }
+#locationSpan > span {
+  font-size: 15px; }
 
 footer {
   text-align: center;
@@ -130,7 +131,7 @@ footer {
 
 /* Larger Phones, Small Tablets */
 @media only screen and (min-width: 480px) {
-  span {
+  .contentSpan {
     clear: both;
     float: left;
     display: -ms-flexbox;
@@ -157,20 +158,20 @@ footer {
   #mobile-instructions {
     display: none; }
   .img-list {
+    margin-top: 50px;
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px; }
-  span {
+  .contentSpan {
     padding: 4px 2px;
     padding-left: 5px;
     height: 35px; }
   .imageIcon {
     padding: 15px 15px; }
-  #nameSpan > p {
+  #nameSpan > span {
     font-size: 20px; }
-  #locationSpan > p {
-    font-size: 16px;
-    margin-bottom: 15px; }
+  #locationSpan > span {
+    font-size: 16px; }
   footer p:last-of-type {
     margin-bottom: 30px; } }
 
@@ -191,10 +192,9 @@ footer {
     -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 40px; }
-  #nameSpan > p {
+  #nameSpan > span {
     font-size: 25px; }
-  #locationSpan > p {
-    font-size: 18px;
-    margin-bottom: 20px; }
+  #locationSpan > span {
+    font-size: 18px; }
   footer p:last-of-type {
     margin-bottom: 40px; } }
