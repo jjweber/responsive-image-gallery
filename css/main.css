@@ -89,10 +89,10 @@ img.on {
   height: 40%; }
 
 .overlay-contents {
-  white-space: nowrap;
-  color: white;
-  position: absolute;
   overflow: hidden;
+  white-space: nowrap;
+  color: #EEE;
+  position: absolute;
   display: block; }
 
 .contentSpan {
@@ -132,22 +132,8 @@ footer {
 /* Larger Phones, Small Tablets */
 @media only screen and (min-width: 480px) {
   .contentSpan {
-    clear: both;
-    float: left;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    padding: 4px 2px;
     padding-left: 5px;
-    height: 30px; }
-  .imageIcon {
-    padding: 0 10px;
-    margin-bottom: 5px;
-    width: 20px;
-    height: auto; }
-  #locationSpan .imageIcon {
-    padding-bottom: 10px; } }
+    height: 30px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
@@ -160,11 +146,8 @@ footer {
   .img-list {
     margin-top: 50px;
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px; }
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
   .contentSpan {
-    padding: 4px 2px;
-    padding-left: 5px;
     height: 35px; }
   .imageIcon {
     padding: 15px 15px; }
